@@ -1,4 +1,17 @@
 <ion-content [fullscreen]="true">
+  <div style="position: fixed; left: 5%; top: 2%; right: 5%;">
+    <ion-grid>
+      <ion-row no-padding>
+        <ion-col size="6">
+          <h1 style="font-family: Belista; font-size: 300%; margin: 0;">MISS PICS</h1>
+          <h6 style="margin: 0;">MONTE SEU PEDIDO!</h6>
+        </ion-col>
+        <ion-col size="6">
+          <ion-img [src]=""></ion-img>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
   <div id="container">
     <ion-grid>
       <ion-row no-padding>
@@ -7,6 +20,14 @@
           <p>{{ product.price }}</p>
           <p>{{ product.image }}</p>
         </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div style="position: fixed; right: 0; bottom: 0;">
+    <ion-grid no-padding>
+      <ion-row no-padding>
+        <ion-col style="padding: 0px; text-align: right;"><h6 style="margin-right: 5px; width: 150px;">Total: R$ 54,50</h6></ion-col>
+        <ion-col style="padding: 0px; margin: auto;"><ion-button expand="block" style="margin-right: 15%;">Finalizar</ion-button></ion-col>
       </ion-row>
     </ion-grid>
   </div>
