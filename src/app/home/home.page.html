@@ -6,9 +6,6 @@
           <h1 style="font-family: Belista; font-size: 300%; margin: 0;">MISS PICS</h1>
           <h6 style="margin: 0;">MONTE SEU PEDIDO!</h6>
         </ion-col>
-        <ion-col size="6">
-          <ion-img [src]=""></ion-img>
-        </ion-col>
       </ion-row>
     </ion-grid>
   </div>
@@ -17,8 +14,10 @@
       <ion-row no-padding>
         <ion-col size="6" *ngFor="let product of products">
           <p>{{ product.name }}</p>
-          <p>{{ product.price }}</p>
           <p>{{ product.image }}</p>
+          <div class="price">
+            <p>{{ product.price | currency:'BRL' }}</p>
+          </div>
         </ion-col>
       </ion-row>
     </ion-grid>
@@ -26,8 +25,12 @@
   <div style="position: fixed; right: 0; bottom: 0;">
     <ion-grid no-padding>
       <ion-row no-padding>
-        <ion-col style="padding: 0px; text-align: right;"><h6 style="margin-right: 5px; width: 150px;">Total: R$ 54,50</h6></ion-col>
-        <ion-col style="padding: 0px; margin: auto;"><ion-button expand="block" style="margin-right: 15%;">Finalizar</ion-button></ion-col>
+        <ion-col style="padding: 0px; text-align: right;">
+          <h6 style="margin-right: 5px; width: 150px;">Total: R$ 54,50</h6>
+        </ion-col>
+        <ion-col style="padding: 0px; margin: auto;">
+          <ion-button expand="block" style="margin-right: 15%;">Finalizar</ion-button>
+        </ion-col>
       </ion-row>
     </ion-grid>
   </div>

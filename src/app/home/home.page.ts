@@ -17,17 +17,17 @@ export class HomePage {
     {
       name: "padrão",
       image: "padrão",
-      price: 2.5
+      price: 1.0
     },
     {
       name: "10x15",
       image: "10x15",
-      price: 2.5
+      price: 1.5
     },
     {
       name: "case",
       image: "case",
-      price: 2.5
+      price: 0.8
     },
   ]
 
